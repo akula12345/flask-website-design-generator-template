@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+	<title>Website design generator(FLASK TEST)</title>
+</head>
+<body id="body" class="{{bodyStyle}}">
+	<div class="center-view">
+		<div class="{{windowStyle}}">
+			<h1>Website design generator</h1>
+			<h2>Don't think about the design, just click the "Generate" button and see how the site is transformed.</h2>
+		</div>
+		<button class="{{btnStyle}}" onclick="generateStyle()">GENERATE</button>
+	</div>
+	<script type="text/javascript">
+		function generateStyle() {
+			document.location.reload()
+		}
+	</script>
+</body>
+</html>
